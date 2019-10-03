@@ -1,23 +1,33 @@
 package com.CodeWithScott;
 
-import java.lang.reflect.InaccessibleObjectException;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Animal Elephant = new Animal(){};
+        Animal elephant = new Animal(){};
 
 
-        Elephant.setTopSpeed(45);
-        Elephant.setIsEndangered(false);
-        Elephant.setNumOfLegs(4);
-        Elephant.setName("Dumbo");
-         System.out.println(Elephant.getTopSpeed());
-         System.out.println(Elephant.getIsEndangered());
-         System.out.println(Elephant.getName());
-         System.out.println(Elephant.getNumOfLegs());
+        elephant.setTopSpeed(45);
+        elephant.setIsEndangered(false);
+        elephant.setNumOfLegs(4);
+        elephant.setName("Dumbo");
+        System.out.println(elephant.getName());
+        System.out.println(elephant.getIsEndangered());
+        System.out.println(elephant.getNumOfLegs());
+        System.out.println("The elephant has a top speed of " + elephant.getTopSpeed() + " mph.");
 
+
+        Animal lion = new Animal(){};
+
+        lion.setTopSpeed(18);
+        lion.setIsEndangered(false);
+        lion.setNumOfLegs(4);
+        lion.setName("Simba");
+        System.out.println(lion.getName());
+        System.out.println(lion.getIsEndangered());
+        System.out.println(lion.getNumOfLegs());
+        System.out.println("The lion has a top speed of " + lion.getTopSpeed() + " mph.");
 
     }
 }
